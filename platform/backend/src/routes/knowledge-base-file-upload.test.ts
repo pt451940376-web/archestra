@@ -519,6 +519,7 @@ describe("connector file upload routes", () => {
       expect(listBody.data[0]).toHaveProperty("id");
       expect(listBody.data[0]).toHaveProperty("contentHash");
       expect(listBody.data[0]).toHaveProperty("embeddingStatus");
+      expect(listBody.data[0]).toHaveProperty("embeddingError");
     });
   });
 
